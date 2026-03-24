@@ -1,0 +1,13 @@
+services:
+  jupyter-notebook-service:
+    container_name: jupyter-notebook-container-tfm
+    image: jupyter-notebook-spark
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/amd64
+    volumes:
+      # - "./scripts/sparkdata:/home/jovyan/sparkdata"
+      - "./scripts/work:/home/jovyan/work"
+    ports:
+      - "8888:8888"
