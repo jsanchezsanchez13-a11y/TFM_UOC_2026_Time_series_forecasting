@@ -5,3 +5,4 @@ psycopg2-binary
 geoalchemy2
 kagglehub
 imblearn
+plotly>=5.0.0,<6.0.0
